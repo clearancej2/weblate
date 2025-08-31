@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:23fdcc27-5109-562a-8d3f-63cc2e245bc1",
+  "serialNumber": "urn:uuid:ca648a71-167c-5cf9-aa37-0a899b8067fd",
   "version": 1,
   "metadata": {
     "tools": [
@@ -167,16 +167,16 @@
     },
     {
       "type": "library",
-      "bom-ref": "@sentry-internal/browser-utils@10.5.0",
+      "bom-ref": "@sentry-internal/browser-utils@10.8.0",
       "author": "Sentry",
       "name": "@sentry-internal/browser-utils",
-      "version": "10.5.0",
+      "version": "10.8.0",
       "description": "Browser Utilities for all Sentry JavaScript SDKs",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "e0a2097448fff08a7dcaa2657954857baf2bfd4e5b9f9a3f9585309c53449c33719a951b3a5afbc770d762e4458b5b1fa0c5312bd2b50eb8e706447b618174d2"
+          "content": "15a417f5e79f73cb21de1dd9432d7a53bdca887d3180395d5e7ac58962ba39e5a0f17e1b2699d86cba848bde8b8078908639e7cfe5103f5183cc7e6816ebb97c"
         }
       ],
       "licenses": [
@@ -186,10 +186,10 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40sentry-internal/browser-utils@10.5.0",
+      "purl": "pkg:npm/%40sentry-internal/browser-utils@10.8.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@sentry-internal/browser-utils/-/browser-utils-10.5.0.tgz",
+          "url": "https://registry.npmjs.org/@sentry-internal/browser-utils/-/browser-utils-10.8.0.tgz",
           "type": "distribution"
         },
         {
@@ -214,16 +214,16 @@
     },
     {
       "type": "library",
-      "bom-ref": "@sentry-internal/feedback@10.5.0",
+      "bom-ref": "@sentry-internal/feedback@10.8.0",
       "author": "Sentry",
       "name": "@sentry-internal/feedback",
-      "version": "10.5.0",
+      "version": "10.8.0",
       "description": "Sentry SDK integration for user feedback",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "c7bf4fe156705316f510665bf4e43910482b0d6142525adbcc707057fa287100394acd52173e6ee9c3f9024ef226d20b889b5d1b303202840ecb818a0f5dc3e1"
+          "content": "9fb4aa805408b6ae1048f1bb6c28dc65c2302ba01ab4a9e79920c9fe2e9ef235cd2322f0904b98d8dcaf4d7002c5574efe469f183e559abc274e8dc491cd4032"
         }
       ],
       "licenses": [
@@ -233,10 +233,10 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40sentry-internal/feedback@10.5.0",
+      "purl": "pkg:npm/%40sentry-internal/feedback@10.8.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@sentry-internal/feedback/-/feedback-10.5.0.tgz",
+          "url": "https://registry.npmjs.org/@sentry-internal/feedback/-/feedback-10.8.0.tgz",
           "type": "distribution"
         },
         {
@@ -261,16 +261,16 @@
     },
     {
       "type": "library",
-      "bom-ref": "@sentry-internal/replay@10.5.0",
+      "bom-ref": "@sentry-internal/replay@10.8.0",
       "author": "Sentry",
       "name": "@sentry-internal/replay",
-      "version": "10.5.0",
+      "version": "10.8.0",
       "description": "User replays for Sentry",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "0e9e1ca04fe73f3845ad81f7895ae954a9a1349d66fe31973040c108d837c09651b33238d47ae3d230803346364b743823160e98561a15b1ad5690339d1c8e1e"
+          "content": "f7ea83128123bf8568a4bb8eccad733382dcbdc52cbc1e4dd2227e15108cdd7cf33826de6c93a78974d06ede477e525cdd72e740d28574a7d37e08fc33fd1129"
         }
       ],
       "licenses": [
@@ -280,10 +280,10 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40sentry-internal/replay@10.5.0",
+      "purl": "pkg:npm/%40sentry-internal/replay@10.8.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@sentry-internal/replay/-/replay-10.5.0.tgz",
+          "url": "https://registry.npmjs.org/@sentry-internal/replay/-/replay-10.8.0.tgz",
           "type": "distribution"
         },
         {
@@ -308,16 +308,16 @@
     },
     {
       "type": "library",
-      "bom-ref": "@sentry-internal/replay-canvas@10.5.0",
+      "bom-ref": "@sentry-internal/replay-canvas@10.8.0",
       "author": "Sentry",
       "name": "@sentry-internal/replay-canvas",
-      "version": "10.5.0",
+      "version": "10.8.0",
       "description": "Replay canvas integration",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "e67ad129de6cc1e7ddf7eb055c567f35e2f76f3fd5c4196cdee6c043769f6a4d791629244b21eade82912a930eb43b2260a5c4dc1734cb7ac5e40fb2dce5e320"
+          "content": "8c2e0e3b088d82b9483de5c83cc2e4696e770524b5768fada181e85b3ccee405c6a4dea34616a7a128f7e85a55b87d8dde4167c4a55f571af087c2feff7bc55a"
         }
       ],
       "licenses": [
@@ -327,10 +327,10 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40sentry-internal/replay-canvas@10.5.0",
+      "purl": "pkg:npm/%40sentry-internal/replay-canvas@10.8.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@sentry-internal/replay-canvas/-/replay-canvas-10.5.0.tgz",
+          "url": "https://registry.npmjs.org/@sentry-internal/replay-canvas/-/replay-canvas-10.8.0.tgz",
           "type": "distribution"
         },
         {
@@ -355,16 +355,16 @@
     },
     {
       "type": "library",
-      "bom-ref": "@sentry/browser@10.5.0",
+      "bom-ref": "@sentry/browser@10.8.0",
       "author": "Sentry",
       "name": "@sentry/browser",
-      "version": "10.5.0",
+      "version": "10.8.0",
       "description": "Official Sentry SDK for browsers",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "a39a4425e67f899ec599acf6b088ab4e17e799254d88fe5962169cbdc0e2d2a736f3c4e605b8a4097ddf5f1ab7c624a48577ded68e5021b372a2fcdfbadcae57"
+          "content": "d89ec7493f3f8b109a6e8ab5ef2167fe3fce128917497a0204c5d1ac5c7814a26080a599f747b621abb998ffc83cf86b5be5bdcc2a6d0a034c634d7aef04b8a8"
         }
       ],
       "licenses": [
@@ -374,10 +374,10 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40sentry/browser@10.5.0",
+      "purl": "pkg:npm/%40sentry/browser@10.8.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@sentry/browser/-/browser-10.5.0.tgz",
+          "url": "https://registry.npmjs.org/@sentry/browser/-/browser-10.8.0.tgz",
           "type": "distribution"
         },
         {
@@ -402,16 +402,16 @@
     },
     {
       "type": "library",
-      "bom-ref": "@sentry/core@10.5.0",
+      "bom-ref": "@sentry/core@10.8.0",
       "author": "Sentry",
       "name": "@sentry/core",
-      "version": "10.5.0",
+      "version": "10.8.0",
       "description": "Base implementation for all Sentry JavaScript SDKs",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "8d327c361652281db28f74135515df0829e043300e2d38505310a5f40eccbfe5c5d74b4fef16c7ffcf0c550e5688eaf6233726ac1f6bda79947b7e819cc94b8c"
+          "content": "b1c63333f50e22dbb83e312ae82a472dd02ba578c84b495a1d8c44e188e421b6081fa54c7171906c3fc54810a5b270abd705d19e55df5c1ce3d21ad0005cb0f9"
         }
       ],
       "licenses": [
@@ -421,10 +421,10 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40sentry/core@10.5.0",
+      "purl": "pkg:npm/%40sentry/core@10.8.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@sentry/core/-/core-10.5.0.tgz",
+          "url": "https://registry.npmjs.org/@sentry/core/-/core-10.8.0.tgz",
           "type": "distribution"
         },
         {
@@ -496,16 +496,16 @@
     },
     {
       "type": "library",
-      "bom-ref": "altcha@2.1.0",
+      "bom-ref": "altcha@2.2.1",
       "author": "Daniel Regeci",
       "name": "altcha",
-      "version": "2.1.0",
+      "version": "2.2.1",
       "description": "Privacy-first CAPTCHA widget, compliant with global regulations (GDPR/HIPAA/CCPA/LGDP/DPDPA/PIPL) and WCAG accessible. No tracking, self-verifying.",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "57e520e10afda0b47659c0d282dce6c0ecc71aaa1e9dc689a3246651bd61a99e98f750775def2f1d0d10dd1c282ae04e6075fdc9361c709bda587129f3ee1421"
+          "content": "2228f53192bb1c9ffa64a352ae30d3f02b1cd5740d756093fefd898af7545441e116f4f22246358b029b900086726ed1d93f3c04567581d4de7db4959cabc1e5"
         }
       ],
       "licenses": [
@@ -515,10 +515,10 @@
           }
         }
       ],
-      "purl": "pkg:npm/altcha@2.1.0",
+      "purl": "pkg:npm/altcha@2.2.1",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/altcha/-/altcha-2.1.0.tgz",
+          "url": "https://registry.npmjs.org/altcha/-/altcha-2.2.1.tgz",
           "type": "distribution"
         },
         {
@@ -590,16 +590,16 @@
     },
     {
       "type": "library",
-      "bom-ref": "bootstrap@5.3.7",
+      "bom-ref": "bootstrap@5.3.8",
       "author": "The Bootstrap Authors",
       "name": "bootstrap",
-      "version": "5.3.7",
+      "version": "5.3.8",
       "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "eca8220fc5078df70f0471290cd83ecc6cfc2f72ea477195c2a662051157d386b504202b64ecf5af6923972d874345a892a4ced2fd6717e400b7c76c5b894a97"
+          "content": "1cfd52643a9a2c33f0b0d8aa46a8b935c3f44925dc897dacf44f91caa24822a1a8faf25e37900954cf7c097996fd6bb1d274392fb8de59476994211fd047beb6"
         }
       ],
       "licenses": [
@@ -609,10 +609,10 @@
           }
         }
       ],
-      "purl": "pkg:npm/bootstrap@5.3.7",
+      "purl": "pkg:npm/bootstrap@5.3.8",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.7.tgz",
+          "url": "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.8.tgz",
           "type": "distribution"
         },
         {
@@ -1596,9 +1596,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "RapidFuzz==3.13.0",
+      "bom-ref": "RapidFuzz==3.14.0",
       "name": "RapidFuzz",
-      "version": "3.13.0",
+      "version": "3.14.0",
       "description": "rapid fuzzy string matching",
       "licenses": [
         {
@@ -1608,7 +1608,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/rapidfuzz@3.13.0",
+      "purl": "pkg:pypi/rapidfuzz@3.14.0",
       "externalReferences": [
         {
           "url": "https://rapidfuzz.github.io/RapidFuzz/",
@@ -2164,9 +2164,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "boto3==1.40.11",
+      "bom-ref": "boto3==1.40.16",
       "name": "boto3",
-      "version": "1.40.11",
+      "version": "1.40.16",
       "description": "The AWS SDK for Python",
       "licenses": [
         {
@@ -2176,7 +2176,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/boto3@1.40.11",
+      "purl": "pkg:pypi/boto3@1.40.16",
       "externalReferences": [
         {
           "url": "https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
@@ -2197,9 +2197,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "botocore==1.40.11",
+      "bom-ref": "botocore==1.40.16",
       "name": "botocore",
-      "version": "1.40.11",
+      "version": "1.40.16",
       "description": "Low-level, data-driven core of boto 3.",
       "licenses": [
         {
@@ -2209,7 +2209,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/botocore@1.40.11",
+      "purl": "pkg:pypi/botocore@1.40.16",
       "externalReferences": [
         {
           "url": "https://github.com/boto/botocore",
@@ -3337,9 +3337,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "django-zxcvbn-password-validator==1.4.5",
+      "bom-ref": "django-zxcvbn-password-validator==1.5.1",
       "name": "django-zxcvbn-password-validator",
-      "version": "1.4.5",
+      "version": "1.5.1",
       "description": "A translatable password validator for django, based on zxcvbn-python.",
       "licenses": [
         {
@@ -3349,7 +3349,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/django-zxcvbn-password-validator@1.4.5",
+      "purl": "pkg:pypi/django-zxcvbn-password-validator@1.5.1",
       "externalReferences": [
         {
           "url": "https://github.com/Pierre-Sassoulas/django-zxcvbn-password-validator/issues",
@@ -4064,9 +4064,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "granian==2.5.0",
+      "bom-ref": "granian==2.5.1",
       "name": "granian",
-      "version": "2.5.0",
+      "version": "2.5.1",
       "description": "A Rust HTTP server for Python applications",
       "licenses": [
         {
@@ -4082,7 +4082,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/granian@2.5.0",
+      "purl": "pkg:pypi/granian@2.5.1",
       "externalReferences": [
         {
           "url": "https://github.com/emmett-framework/granian",
@@ -4187,49 +4187,6 @@
           "url": "https://grpc.io",
           "type": "website",
           "comment": "from packaging metadata: Home-page"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "gunicorn==23.0.0",
-      "name": "gunicorn",
-      "version": "23.0.0",
-      "description": "WSGI HTTP Server for UNIX",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:pypi/gunicorn@23.0.0",
-      "externalReferences": [
-        {
-          "url": "https://docs.gunicorn.org",
-          "type": "documentation",
-          "comment": "from packaging metadata Project-URL: Documentation"
-        },
-        {
-          "url": "https://github.com/benoitc/gunicorn/issues",
-          "type": "issue-tracker",
-          "comment": "from packaging metadata Project-URL: Issue tracker"
-        },
-        {
-          "url": "https://github.com/benoitc/gunicorn",
-          "type": "other",
-          "comment": "from packaging metadata Project-URL: Source code"
-        },
-        {
-          "url": "https://docs.gunicorn.org/en/stable/news.html",
-          "type": "release-notes",
-          "comment": "from packaging metadata Project-URL: Changelog"
-        },
-        {
-          "url": "https://gunicorn.org",
-          "type": "website",
-          "comment": "from packaging metadata Project-URL: Homepage"
         }
       ]
     },
@@ -4556,9 +4513,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "jsonschema==4.25.0",
+      "bom-ref": "jsonschema==4.25.1",
       "name": "jsonschema",
-      "version": "4.25.0",
+      "version": "4.25.1",
       "description": "An implementation of JSON Schema validation for Python",
       "licenses": [
         {
@@ -4568,7 +4525,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/jsonschema@4.25.0",
+      "purl": "pkg:pypi/jsonschema@4.25.1",
       "externalReferences": [
         {
           "url": "https://python-jsonschema.readthedocs.io/",
@@ -4738,9 +4695,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "lxml==6.0.0",
+      "bom-ref": "lxml==6.0.1",
       "name": "lxml",
-      "version": "6.0.0",
+      "version": "6.0.1",
       "description": "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.",
       "licenses": [
         {
@@ -4756,7 +4713,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/lxml@6.0.0",
+      "purl": "pkg:pypi/lxml@6.0.1",
       "externalReferences": [
         {
           "url": "https://bugs.launchpad.net/lxml",
@@ -4994,9 +4951,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "openai==1.99.9",
+      "bom-ref": "openai==1.101.0",
       "name": "openai",
-      "version": "1.99.9",
+      "version": "1.101.0",
       "description": "The official Python library for the openai API",
       "licenses": [
         {
@@ -5012,7 +4969,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/openai@1.99.9",
+      "purl": "pkg:pypi/openai@1.101.0",
       "externalReferences": [
         {
           "url": "https://github.com/openai/openai-python",
@@ -6124,9 +6081,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "requests==2.32.4",
+      "bom-ref": "requests==2.32.5",
       "name": "requests",
-      "version": "2.32.4",
+      "version": "2.32.5",
       "description": "Python HTTP for Humans.",
       "licenses": [
         {
@@ -6142,7 +6099,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/requests@2.32.4",
+      "purl": "pkg:pypi/requests@2.32.5",
       "externalReferences": [
         {
           "url": "https://requests.readthedocs.io",
@@ -6414,9 +6371,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "ruamel.yaml==0.18.14",
+      "bom-ref": "ruamel.yaml==0.18.15",
       "name": "ruamel.yaml",
-      "version": "0.18.14",
+      "version": "0.18.15",
       "description": "ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order",
       "licenses": [
         {
@@ -6426,7 +6383,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/ruamel.yaml@0.18.14",
+      "purl": "pkg:pypi/ruamel.yaml@0.18.15",
       "externalReferences": [
         {
           "url": "https://yaml.dev/doc/ruamel-yaml",
@@ -7100,9 +7057,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "types-python-dateutil==2.9.0.20250809",
+      "bom-ref": "types-python-dateutil==2.9.0.20250822",
       "name": "types-python-dateutil",
-      "version": "2.9.0.20250809",
+      "version": "2.9.0.20250822",
       "description": "Typing stubs for python-dateutil",
       "licenses": [
         {
@@ -7112,7 +7069,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/types-python-dateutil@2.9.0.20250809",
+      "purl": "pkg:pypi/types-python-dateutil@2.9.0.20250822",
       "externalReferences": [
         {
           "url": "https://gitter.im/python/typing",
@@ -7955,11 +7912,11 @@
       "ref": "weblate-client-libs@5.13.1",
       "dependsOn": [
         "@popperjs/core@2.11.8",
-        "@sentry/browser@10.5.0",
+        "@sentry/browser@10.8.0",
         "@tarekraafat/autocomplete.js@10.2.9",
-        "altcha@2.1.0",
+        "altcha@2.2.1",
         "autosize@6.0.1",
-        "bootstrap@5.3.7",
+        "bootstrap@5.3.8",
         "daterangepicker@3.1.0",
         "jquery@3.7.1",
         "moment@2.30.1",
@@ -7986,43 +7943,43 @@
       "dependsOn": []
     },
     {
-      "ref": "@sentry-internal/browser-utils@10.5.0",
+      "ref": "@sentry-internal/browser-utils@10.8.0",
       "dependsOn": [
-        "@sentry/core@10.5.0"
+        "@sentry/core@10.8.0"
       ]
     },
     {
-      "ref": "@sentry-internal/feedback@10.5.0",
+      "ref": "@sentry-internal/feedback@10.8.0",
       "dependsOn": [
-        "@sentry/core@10.5.0"
+        "@sentry/core@10.8.0"
       ]
     },
     {
-      "ref": "@sentry-internal/replay@10.5.0",
+      "ref": "@sentry-internal/replay@10.8.0",
       "dependsOn": [
-        "@sentry-internal/browser-utils@10.5.0",
-        "@sentry/core@10.5.0"
+        "@sentry-internal/browser-utils@10.8.0",
+        "@sentry/core@10.8.0"
       ]
     },
     {
-      "ref": "@sentry-internal/replay-canvas@10.5.0",
+      "ref": "@sentry-internal/replay-canvas@10.8.0",
       "dependsOn": [
-        "@sentry-internal/replay@10.5.0",
-        "@sentry/core@10.5.0"
+        "@sentry-internal/replay@10.8.0",
+        "@sentry/core@10.8.0"
       ]
     },
     {
-      "ref": "@sentry/browser@10.5.0",
+      "ref": "@sentry/browser@10.8.0",
       "dependsOn": [
-        "@sentry-internal/browser-utils@10.5.0",
-        "@sentry-internal/feedback@10.5.0",
-        "@sentry-internal/replay@10.5.0",
-        "@sentry-internal/replay-canvas@10.5.0",
-        "@sentry/core@10.5.0"
+        "@sentry-internal/browser-utils@10.8.0",
+        "@sentry-internal/feedback@10.8.0",
+        "@sentry-internal/replay@10.8.0",
+        "@sentry-internal/replay-canvas@10.8.0",
+        "@sentry/core@10.8.0"
       ]
     },
     {
-      "ref": "@sentry/core@10.5.0",
+      "ref": "@sentry/core@10.8.0",
       "dependsOn": []
     },
     {
@@ -8030,7 +7987,7 @@
       "dependsOn": []
     },
     {
-      "ref": "altcha@2.1.0",
+      "ref": "altcha@2.2.1",
       "dependsOn": [
         "@altcha/crypto@0.0.1",
         "@rollup/rollup-linux-x64-gnu@4.18.0"
@@ -8041,7 +7998,7 @@
       "dependsOn": []
     },
     {
-      "ref": "bootstrap@5.3.7",
+      "ref": "bootstrap@5.3.8",
       "dependsOn": [
         "@popperjs/core@2.11.8"
       ]
@@ -8149,7 +8106,7 @@
       "ref": "Pygments==2.19.2"
     },
     {
-      "ref": "RapidFuzz==3.13.0"
+      "ref": "RapidFuzz==3.14.0"
     },
     {
       "ref": "Unidecode==1.4.0"
@@ -8220,7 +8177,7 @@
         "dateparser==1.2.2",
         "python-dateutil==2.9.0.post0",
         "pytz==2025.2",
-        "types-python-dateutil==2.9.0.20250809"
+        "types-python-dateutil==2.9.0.20250822"
       ]
     },
     {
@@ -8246,15 +8203,15 @@
       ]
     },
     {
-      "ref": "boto3==1.40.11",
+      "ref": "boto3==1.40.16",
       "dependsOn": [
-        "botocore==1.40.11",
+        "botocore==1.40.16",
         "jmespath==0.10.0",
         "s3transfer==0.13.1"
       ]
     },
     {
-      "ref": "botocore==1.40.11",
+      "ref": "botocore==1.40.16",
       "dependsOn": [
         "jmespath==0.10.0",
         "python-dateutil==2.9.0.post0",
@@ -8272,7 +8229,7 @@
       "dependsOn": [
         "Django==5.2.5",
         "billiard==4.2.1",
-        "boto3==1.40.11",
+        "boto3==1.40.16",
         "click-didyoumean==0.3.1",
         "click-plugins==1.1.1.2",
         "click-repl==0.3.0",
@@ -8443,7 +8400,7 @@
         "Django==5.2.5",
         "django-otp==1.6.1",
         "djangorestframework==3.16.1",
-        "jsonschema==4.25.0",
+        "jsonschema==4.25.1",
         "webauthn==2.6.0"
       ]
     },
@@ -8476,7 +8433,7 @@
       ]
     },
     {
-      "ref": "django-zxcvbn-password-validator==1.4.5",
+      "ref": "django-zxcvbn-password-validator==1.5.1",
       "dependsOn": [
         "Django==5.2.5",
         "zxcvbn==4.5.0"
@@ -8520,7 +8477,7 @@
         "djangorestframework==3.16.1",
         "drf-spectacular-sidecar==2025.8.1",
         "inflection==0.5.1",
-        "jsonschema==4.25.0",
+        "jsonschema==4.25.1",
         "typing_extensions==4.14.1",
         "uritemplate==4.2.0"
       ]
@@ -8537,7 +8494,7 @@
     {
       "ref": "elementpath==4.8.0",
       "dependsOn": [
-        "lxml==6.0.0",
+        "lxml==6.0.1",
         "xmlschema==2.5.1"
       ]
     },
@@ -8568,7 +8525,7 @@
     {
       "ref": "git-review==2.5.0",
       "dependsOn": [
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
@@ -8586,7 +8543,7 @@
         "grpcio==1.74.0",
         "proto-plus==1.26.1",
         "protobuf==6.32.0",
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
@@ -8599,7 +8556,7 @@
         "packaging==25.0",
         "pyOpenSSL==25.1.0",
         "pyasn1_modules==0.4.2",
-        "requests==2.32.4",
+        "requests==2.32.5",
         "rsa==4.9.1",
         "urllib3==2.5.0"
       ]
@@ -8622,7 +8579,7 @@
         "google-crc32c==1.7.1",
         "google-resumable-media==2.7.2",
         "protobuf==6.32.0",
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
@@ -8644,7 +8601,7 @@
       "dependsOn": [
         "google-auth==2.40.3",
         "google-crc32c==1.7.1",
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
@@ -8655,7 +8612,7 @@
       ]
     },
     {
-      "ref": "granian==2.5.0",
+      "ref": "granian==2.5.1",
       "dependsOn": [
         "click==8.2.1"
       ]
@@ -8678,12 +8635,6 @@
     },
     {
       "ref": "grpcio==1.74.0"
-    },
-    {
-      "ref": "gunicorn==23.0.0",
-      "dependsOn": [
-        "packaging==25.0"
-      ]
     },
     {
       "ref": "h11==0.16.0"
@@ -8741,7 +8692,7 @@
       ]
     },
     {
-      "ref": "jsonschema==4.25.0",
+      "ref": "jsonschema==4.25.1",
       "dependsOn": [
         "attrs==25.3.0",
         "fqdn==1.5.1",
@@ -8757,7 +8708,7 @@
       "dependsOn": [
         "PyYAML==6.0.2",
         "amqp==5.3.1",
-        "boto3==1.40.11",
+        "boto3==1.40.16",
         "grpcio==1.74.0",
         "msgpack==1.1.0",
         "packaging==25.0",
@@ -8776,7 +8727,7 @@
       ]
     },
     {
-      "ref": "lxml==6.0.0",
+      "ref": "lxml==6.0.1",
       "dependsOn": [
         "cssselect==1.3.0"
       ]
@@ -8810,7 +8761,7 @@
       ]
     },
     {
-      "ref": "openai==1.99.9",
+      "ref": "openai==1.101.0",
       "dependsOn": [
         "anyio==4.10.0",
         "distro==1.9.0",
@@ -8934,14 +8885,14 @@
         "pyOpenSSL==25.1.0",
         "python-dateutil==2.9.0.post0",
         "pytz==2025.2",
-        "requests==2.32.4",
+        "requests==2.32.5",
         "xmlschema==2.5.1"
       ]
     },
     {
       "ref": "python-akismet==0.4.3",
       "dependsOn": [
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
@@ -8973,7 +8924,7 @@
       "ref": "python3-saml==1.16.0",
       "dependsOn": [
         "isodate==0.7.2",
-        "lxml==6.0.0",
+        "lxml==6.0.1",
         "xmlsec==1.3.16"
       ]
     },
@@ -8995,7 +8946,7 @@
         "cryptography==45.0.6",
         "hiredis==3.2.1",
         "pyOpenSSL==25.1.0",
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
@@ -9012,24 +8963,24 @@
     {
       "ref": "requests-file==2.1.0",
       "dependsOn": [
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
       "ref": "requests-oauthlib==2.0.0",
       "dependsOn": [
         "oauthlib==3.3.1",
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
       "ref": "requests-toolbelt==1.0.0",
       "dependsOn": [
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
-      "ref": "requests==2.32.4",
+      "ref": "requests==2.32.5",
       "dependsOn": [
         "certifi==2025.8.3",
         "charset-normalizer==3.4.3",
@@ -9059,7 +9010,7 @@
       "ref": "ruamel.yaml.clib==0.2.12"
     },
     {
-      "ref": "ruamel.yaml==0.18.14",
+      "ref": "ruamel.yaml==0.18.15",
       "dependsOn": [
         "mercurial==7.1",
         "ruamel.yaml.clib==0.2.12"
@@ -9068,7 +9019,7 @@
     {
       "ref": "s3transfer==0.13.1",
       "dependsOn": [
-        "botocore==1.40.11"
+        "botocore==1.40.16"
       ]
     },
     {
@@ -9081,7 +9032,7 @@
         "grpcio==1.74.0",
         "httpcore==1.0.9",
         "httpx==0.28.1",
-        "openai==1.99.9",
+        "openai==1.101.0",
         "protobuf==6.32.0",
         "urllib3==2.5.0"
       ]
@@ -9124,7 +9075,7 @@
         "python3-openid==3.2.0",
         "python3-saml==1.16.0",
         "requests-oauthlib==2.0.0",
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
@@ -9138,7 +9089,7 @@
         "httpx==0.28.1",
         "python-dateutil==2.9.0.post0",
         "types-Deprecated==1.2.15.20250304",
-        "types-python-dateutil==2.9.0.20250809"
+        "types-python-dateutil==2.9.0.20250822"
       ]
     },
     {
@@ -9150,7 +9101,7 @@
     {
       "ref": "tqdm==4.67.1",
       "dependsOn": [
-        "requests==2.32.4"
+        "requests==2.32.5"
       ]
     },
     {
@@ -9161,18 +9112,18 @@
         "cwcwidth==0.1.10",
         "fluent.syntax==0.19.0",
         "iniparse==0.5",
-        "lxml==6.0.0",
+        "lxml==6.0.1",
         "mistletoe==1.4.0",
         "phply==1.2.6",
         "pyparsing==3.2.3",
-        "ruamel.yaml==0.18.14"
+        "ruamel.yaml==0.18.15"
       ]
     },
     {
       "ref": "translation-finder==2.23",
       "dependsOn": [
         "charset-normalizer==3.4.3",
-        "ruamel.yaml==0.18.14",
+        "ruamel.yaml==0.18.15",
         "weblate-language-data==2025.8"
       ]
     },
@@ -9180,7 +9131,7 @@
       "ref": "types-Deprecated==1.2.15.20250304"
     },
     {
-      "ref": "types-python-dateutil==2.9.0.20250809"
+      "ref": "types-python-dateutil==2.9.0.20250822"
     },
     {
       "ref": "typing-inspection==0.4.1",
@@ -9252,7 +9203,7 @@
         "GitPython==3.1.45",
         "PyGObject==3.52.3",
         "Pygments==2.19.2",
-        "RapidFuzz==3.13.0",
+        "RapidFuzz==3.14.0",
         "Unidecode==1.4.0",
         "aeidon==1.15",
         "ahocorasick_rs==0.22.2",
@@ -9260,7 +9211,7 @@
         "aliyun-python-sdk-core==2.16.0",
         "altcha==0.2.0",
         "borgbackup==1.4.1",
-        "boto3==1.40.11",
+        "boto3==1.40.16",
         "celery==5.5.3",
         "certifi==2025.8.3",
         "charset-normalizer==3.4.3",
@@ -9282,7 +9233,7 @@
         "django-otp-webauthn==0.6.0",
         "django-otp==1.6.1",
         "django-redis==6.0.0",
-        "django-zxcvbn-password-validator==1.4.5",
+        "django-zxcvbn-password-validator==1.5.1",
         "djangorestframework-csv==3.0.2",
         "djangorestframework==3.16.1",
         "djangosaml2idp==0.7.2",
@@ -9294,19 +9245,18 @@
         "git-review==2.5.0",
         "google-cloud-storage==3.3.0",
         "google-cloud-translate==3.21.1",
-        "granian==2.5.0",
-        "gunicorn==23.0.0",
+        "granian==2.5.1",
         "hiredis==3.2.1",
         "html2text==2025.4.15",
         "iniparse==0.5",
-        "jsonschema==4.25.0",
+        "jsonschema==4.25.1",
         "logging-gelf==0.0.32",
-        "lxml==6.0.0",
+        "lxml==6.0.1",
         "mercurial==7.1",
         "mistletoe==1.4.0",
         "mysqlclient==2.2.7",
         "nh3==0.3.0",
-        "openai==1.99.9",
+        "openai==1.101.0",
         "openpyxl==3.1.5",
         "packaging==25.0",
         "phply==1.2.6",
@@ -9321,8 +9271,8 @@
         "qrcode==8.2",
         "redis==5.2.1",
         "regex==2025.7.34",
-        "requests==2.32.4",
-        "ruamel.yaml==0.18.14",
+        "requests==2.32.5",
+        "ruamel.yaml==0.18.15",
         "sentry-sdk==2.35.0",
         "siphashc==2.5",
         "social-auth-app-django==5.5.1",
@@ -9342,7 +9292,7 @@
       "ref": "weblate_schemas==2025.5",
       "dependsOn": [
         "fqdn==1.5.1",
-        "jsonschema==4.25.0",
+        "jsonschema==4.25.1",
         "rfc3987==1.3.8",
         "strict-rfc3339==0.7"
       ]
@@ -9357,7 +9307,7 @@
         "fakturace==0.7.2",
         "psycopg==3.2.9",
         "python-dateutil==2.9.0.post0",
-        "requests==2.32.4",
+        "requests==2.32.5",
         "weblate==5.13.1"
       ]
     },
@@ -9378,13 +9328,13 @@
       "dependsOn": [
         "Jinja2==3.1.6",
         "elementpath==4.8.0",
-        "lxml==6.0.0"
+        "lxml==6.0.1"
       ]
     },
     {
       "ref": "xmlsec==1.3.16",
       "dependsOn": [
-        "lxml==6.0.0"
+        "lxml==6.0.1"
       ]
     },
     {
@@ -9393,12 +9343,12 @@
         "attrs==25.3.0",
         "httpx==0.28.1",
         "isodate==0.7.2",
-        "lxml==6.0.0",
+        "lxml==6.0.1",
         "platformdirs==4.3.8",
         "pytz==2025.2",
         "requests-file==2.1.0",
         "requests-toolbelt==1.0.0",
-        "requests==2.32.4",
+        "requests==2.32.5",
         "xmlsec==1.3.16"
       ]
     },

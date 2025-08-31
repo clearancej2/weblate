@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: Weblate 5.13\n"
 "Report-Msgid-Bugs-To: https://github.com/WeblateOrg/weblate/issues\n"
 "POT-Creation-Date: 2025-08-12 10:55+0200\n"
-"PO-Revision-Date: 2025-08-20 11:02+0000\n"
+"PO-Revision-Date: 2025-08-24 02:02+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/weblate/"
 "documentation/es/>\n"
@@ -15390,22 +15390,21 @@ msgstr ""
 "docs>`_"
 
 #: ../../admin/install/docker.rst:2102
-#, fuzzy
-#| msgid "Local filesystem"
 msgid "Read-only root filesystem"
-msgstr "Sistema de archivos local"
+msgstr "Sistema de archivos raíz de solo lectura"
 
 #: ../../admin/install/docker.rst:2106
 msgid ""
 "When running the container with a read-only root filesystem, two additional "
 "`tmpfs` volumes are required - :file:`/tmp` and :file:`/run`."
 msgstr ""
+"Cuando se ejecuta el contenedor con un sistema de archivos raíz de solo "
+"lectura, se requieren dos volúmenes `tmpfs` adicionales - :file:`/tmp` y "
+":file:`/run`."
 
 #: ../../admin/install/docker.rst:2113
-#, fuzzy
-#| msgid "Configuration errors"
 msgid "Configuration beyond environment variables"
-msgstr "Errores de configuración"
+msgstr "Configuración más allá de las variables de entorno"
 
 #: ../../admin/install/docker.rst:2115
 msgid ""
@@ -15413,6 +15412,9 @@ msgid ""
 "expose most :ref:`configuration settings <config>` of relevance for Weblate "
 "installations."
 msgstr ""
+":ref:`Docker environment variables <docker-environment>` están destinados a "
+"exponer la mayoría :ref:`configuration settings <config>` de relevancia para "
+"las instalaciones de Weblate."
 
 #: ../../admin/install/docker.rst:2119
 msgid ""
@@ -15420,6 +15422,9 @@ msgid ""
 "you believe that it should be, feel free to :ref:`ask for it to be exposed "
 "in a future version of Weblate <report-issue>`."
 msgstr ""
+"Si encuentra una configuración que no está expuesta como variable de "
+"entorno, y cree que debería estarlo, siéntase libre de hacerlo :ref:`ask for "
+"it to be exposed in a future version of Weblate <report-issue>`."
 
 #: ../../admin/install/docker.rst:2123
 msgid ""
@@ -15428,10 +15433,14 @@ msgid ""
 "settings-override>` or :ref:`extending the Docker image <docker-custom-"
 "settings>`."
 msgstr ""
+"Si necesita modificar una configuración que no está expuesta como variable "
+"de entorno de Docker, aún puede hacerlo, ya sea :ref:`from the data volume "
+"<docker-settings-override>` o :ref:`extending the Docker image <docker-"
+"custom-settings>`."
 
 #: ../../admin/install/docker.rst:2135
 msgid "Overriding settings from the data volume"
-msgstr ""
+msgstr "Anulación de la configuración del volumen de datos"
 
 #: ../../admin/install/docker.rst:2137
 msgid ""
@@ -15439,10 +15448,13 @@ msgid ""
 "root of the :ref:`data volume <docker-volume>`, to extend or override "
 "settings defined through environment variables."
 msgstr ""
+"Puede crear un archivo en :file:`/app/data/settings-override.py`, es decir, "
+"en la raíz de :ref:`data volume <docker-volume>`, para extender o anular la "
+"configuración definida a través de variables de entorno."
 
 #: ../../admin/install/docker.rst:2145
 msgid "Overriding settings by extending the Docker image"
-msgstr ""
+msgstr "Anular la configuración extendiendo la imagen de Docker"
 
 #: ../../admin/install/docker.rst:2147
 msgid ""
@@ -15506,6 +15518,8 @@ msgstr ""
 #: ../../admin/install/docker.rst:2199
 msgid "Extend your custom settings module to define or redefine settings."
 msgstr ""
+"Ampliar el módulo de configuración personalizada para definir o redefinir la "
+"configuración."
 
 #: ../../admin/install/docker.rst:2201
 msgid ""
@@ -15515,6 +15529,12 @@ msgid ""
 "defined in the data volume. Setting defined after the import statement "
 "cannot be overridden."
 msgstr ""
+"Se puede definir la configuración antes o después de la instrucción de "
+"importación anterior para determinar qué configuración tiene prioridad. Las "
+"variables de entorno y las anulaciones de configuración definidas en el "
+"volumen de datos pueden anular la configuración definida antes de la "
+"instrucción de importación. La configuración definida después de la "
+"instrucción de importación no se puede anular."
 
 #: ../../admin/install/docker.rst:2207
 msgid ""
@@ -15524,10 +15544,15 @@ msgid ""
 "as environment variables, or allow overriding settings from Python files in "
 "the data volume."
 msgstr ""
+"También puedes ir más allá. Por ejemplo, puede reproducir algunas de las "
+"cosas que ``weblate.docker_settings`` `does <https://github.com/WeblateOrg/"
+"weblate/blob/main/weblate/settings_docker.py>`__, como exponer la "
+"configuración como variables de entorno o permitir anular la configuración "
+"de los archivos Python en el volumen de datos."
 
 #: ../../admin/install/docker.rst:2214
 msgid "Replacing logo and other static files"
-msgstr ""
+msgstr "Reemplazo de logotipos y otros archivos estáticos"
 
 #: ../../admin/install/docker.rst:2216
 msgid ""
@@ -15536,12 +15561,19 @@ msgid ""
 "creating :file:`/app/data/python/customize/static/favicon.ico` will replace "
 "the favicon."
 msgstr ""
+"Los archivos estáticos que vienen con Weblate se pueden anular colocando en "
+":file:`/app/data/python/customize/static` (ver :ref:`docker-volume`). Por "
+"ejemplo creando :file:`/app/data/python/customize/static/favicon.ico` "
+"reemplazará el favicon."
 
 #: ../../admin/install/docker.rst:2223
 msgid ""
 "The files are copied to the corresponding location upon container startup, "
 "so a restart of Weblate is needed after changing the content of the volume."
 msgstr ""
+"Los archivos se copian en la ubicación correspondiente al iniciar el "
+"contenedor, por lo que es necesario reiniciar Weblate después de cambiar el "
+"contenido del volumen."
 
 #: ../../admin/install/docker.rst:2226
 msgid ""
@@ -15549,18 +15581,22 @@ msgid ""
 "ref:`legal` documents can be placed into :file:`/app/data/python/customize/"
 "templates/legal/documents`."
 msgstr ""
+"Este enfoque también se puede utilizar para anular las plantillas de "
+"Weblate. Por ejemplo los documentos :ref:`legal` se pueden colocar en "
+":file:`/app/data/python/customize/templates/legal/documents`."
 
 #: ../../admin/install/docker.rst:2230
 msgid ""
 "Alternatively you can also include own module (see :doc:`../customize`) and "
 "add it as separate volume to the Docker container, for example:"
 msgstr ""
+"Alternativamente, también puede incluir un módulo propio (ver :doc:`../"
+"customize`) y agréguelo como volumen separado al contenedor Docker, por "
+"ejemplo:"
 
 #: ../../admin/install/docker.rst:2243
-#, fuzzy
-#| msgid "Customizing backup"
 msgid "Customizing code"
-msgstr "Personalización de la copia de seguridad"
+msgstr "Personalización del código"
 
 #: ../../admin/install/docker.rst:2247
 msgid ""
@@ -15568,6 +15604,9 @@ msgid ""
 "meant to be stable. Please review your custom code interacting with Weblate "
 "internals on each upgrade."
 msgstr ""
+"La API interna de Weblate puede variar significativamente entre versiones y "
+"no pretende ser estable. Revise su código personalizado que interactúa con "
+"los componentes internos de Weblate en cada actualización."
 
 #: ../../admin/install/docker.rst:2251
 msgid ""
@@ -15576,6 +15615,10 @@ msgid ""
 "inside Weblate (this is used for customizing templates and static files as "
 "described above)."
 msgstr ""
+"Puede colocar código Python adicional en :file:`/app/data/python/customize` "
+"(ver:  :ref:`docker-volume`). Ya está instalado como una aplicación Django "
+"dentro de Weblate (esto se usa para personalizar plantillas y archivos "
+"estáticos como se describió anteriormente)."
 
 #: ../../admin/install/docker.rst:2256
 msgid ""
@@ -15660,6 +15703,8 @@ msgid ""
 "For further configuration options, see :ref:`docker-environment` for full "
 "list of environment variables."
 msgstr ""
+"Para más opciones de configuración, ver :ref:`docker-environment` para una "
+"lista completa de variables de entorno."
 
 #: ../../admin/install/openshift.rst:2
 msgid "Installing on OpenShift"
@@ -15672,11 +15717,17 @@ msgid ""
 "already included. PostgreSQL is set up as the default database and "
 "persistent volume claims are used."
 msgstr ""
+"Con la plantilla de Weblate de OpenShift, puede poner en funcionamiento su "
+"instancia personal de Weblate en cuestión de segundos. Todas las "
+"dependencias de Weblate ya están incluidas. PostgreSQL se configura como la "
+"base de datos predeterminada y se utilizan las notificaciones de volumen "
+"persistentes."
 
 #: ../../admin/install/openshift.rst:9
 msgid ""
 "You can find the template at <https://github.com/WeblateOrg/openshift/>."
 msgstr ""
+"Puede encontrar la plantilla en <https://github.com/WeblateOrg/openshift/>."
 
 #: ../../admin/install/openshift.rst:14
 msgid ""
@@ -15694,6 +15745,10 @@ msgid ""
 "There is also :file:`template-external-postgresql.yml` which does not start "
 "a PostgreSQL server and allows you to configure external PostgreSQL server."
 msgstr ""
+"El :file:`template.yml` es adecuado para ejecutar todos los componentes en "
+"OpenShift. También está :file:`template-external-postgresql.yml` que no "
+"inicia un servidor PostgreSQL y permite configurar un servidor PostgreSQL "
+"externo."
 
 #: ../../admin/install/openshift.rst:23
 msgid "Web Console"
@@ -15707,21 +15762,32 @@ msgid ""
 "your application. The web console will prompt you for the values for all of "
 "the parameters used by the template."
 msgstr ""
+"Copie el contenido sin procesar de `template.yml <https://github.com/"
+"WeblateOrg/openshift/blob/main/template.yml>`_ e impórtelos a su proyecto, "
+"luego use el botón :guilabel:`Create` para crear su aplicación. La consola "
+"web le pedirá los valores de todos los parámetros utilizados por la "
+"plantilla."
 
 #: ../../admin/install/openshift.rst:32
+#, fuzzy
 msgid "CLI"
-msgstr ""
+msgstr "CLI"
 
 #: ../../admin/install/openshift.rst:34
 msgid ""
 "To upload the Weblate template to your current project’s template library, "
 "pass the :file:`template.yml` file with the following command:"
 msgstr ""
+"Para cargar la plantilla de Weblate en la biblioteca de plantillas de su "
+"proyecto actual, pase el archivo :file:`template.yml` con el siguiente "
+"comando:"
 
 #: ../../admin/install/openshift.rst:42
 msgid ""
 "The template is now available for selection using the web console or the CLI."
 msgstr ""
+"La plantilla ya está disponible para su selección mediante la consola web o "
+"la CLI."
 
 #: ../../admin/install/openshift.rst:46 ../../api.rst:0
 #: ../../contributing/addons.rst:0 ../../python.rst:0
@@ -15734,6 +15800,9 @@ msgid ""
 "the template. You can list them with the CLI by using the following command "
 "and specifying the file to be used:"
 msgstr ""
+"Los parámetros que puede anular se enumeran en la sección parámetros de la "
+"plantilla. Puede enumerarlos con la CLI utilizando el siguiente comando y "
+"especificando el archivo que se utilizará:"
 
 #: ../../admin/install/openshift.rst:60
 msgid "Provisioning"

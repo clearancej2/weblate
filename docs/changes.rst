@@ -10,6 +10,8 @@ Weblate 5.13.1
 .. rubric:: Bug fixes
 
 * Access control for :http:get:`/api/users/(str:username)/`.
+* :ref:`file_format_params` were not properly applied in some situations.
+* :ref:`mt-libretranslate` compatibility with LibreTranslate 1.7.0.
 
 .. rubric:: Compatibility
 
@@ -190,7 +192,6 @@ Weblate 5.12
 * The projects and categories default tab now shows translated languages.
 * If no ``secret`` is provided in the Webhook add-on configuration, the Webhook request will not be signed, see :ref:`addon-weblate.webhook.webhook`.
 * :ref:`saml-auth` support is no longer included in the default dependencies.
-* Some addons have been deprecated and replaced by :ref:`file_format_params`: :ref:`addon-weblate.gettext.customize`, :ref:`addon-weblate.json.customize`, :ref:`addon-weblate.yaml.customize`, :ref:`addon-weblate.xml.customize`.
 
 .. rubric:: Upgrading
 
