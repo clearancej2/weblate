@@ -1,23 +1,124 @@
-Weblate 5.13.1
---------------
+Weblate 5.14
+------------
 
 *Not yet released.*
 
 .. rubric:: New features
 
+* :ref:`addon-weblate.flags.target_repo_update` is now available as an add-on.
+* :http:delete:`/api/projects/(string:project)/labels/(int:label_id)/`.
+* Added multivalue CSV in :ref:`download` for multivalue formats.
+
 .. rubric:: Improvements
+
+* New global permissions have been added to control viewing teams, users and roles without edit rights, see :ref:`privileges`.
+
+* :ref:`date-search`.
+* Last changed loookup in :ref:`search-strings`.
 
 .. rubric:: Bug fixes
 
-* Access control for :http:get:`/api/users/(str:username)/`.
-* :ref:`file_format_params` were not properly applied in some situations.
-* :ref:`mt-libretranslate` compatibility with LibreTranslate 1.7.0.
+* Plurals and :ref:`file_format_params` handling on file upload.
 
 .. rubric:: Compatibility
 
 .. rubric:: Upgrading
 
 Please follow :ref:`generic-upgrade-instructions` in order to perform update.
+
+.. rubric:: Contributors
+
+.. include:: changes/contributors/5.14.rst
+
+`All changes in detail <https://github.com/WeblateOrg/weblate/milestone/149?closed=1>`__.
+
+Weblate 5.13.3
+--------------
+
+*Released on September 12th 2025.*
+
+.. rubric:: Improvements
+
+* Text on the registration page informs about possible use of user’s data in more detail.
+* Clarified account removal view.
+
+.. rubric:: Bug fixes
+
+* Components pagination.
+* :ref:`projectbackup` with same named components in different categories.
+* Source string location display.
+* Correctly track team adding via invitation in :ref:`audit-log`.
+* :ref:`addon-weblate.consistency.languages` no longer includes shared component languages.
+* :ref:`azure-devops-push` API URL parsing.
+
+.. rubric:: Upgrading
+
+Please follow :ref:`generic-upgrade-instructions` in order to perform update.
+
+.. rubric:: Contributors
+
+.. include:: changes/contributors/5.13.3.rst
+
+`All changes in detail <https://github.com/WeblateOrg/weblate/milestone/153?closed=1>`__.
+
+Weblate 5.13.2
+--------------
+
+*Released on September 5th 2025.*
+
+.. rubric:: Improvements
+
+* Error reporting upon validation of the file upload method.
+* Detailed language information in new language notifications.
+
+.. rubric:: Bug fixes
+
+* Sign-in could not be completed with LDAP.
+* Nonspacing mark changes highlighting in history.
+
+.. rubric:: Upgrading
+
+Please follow :ref:`generic-upgrade-instructions` in order to perform update.
+
+.. rubric:: Contributors
+
+.. include:: changes/contributors/5.13.2.rst
+
+`All changes in detail <https://github.com/WeblateOrg/weblate/milestone/151?closed=1>`__.
+
+Weblate 5.13.1
+--------------
+
+*Released on September 4th 2025.*
+
+.. rubric:: Improvements
+
+* Smarter retries of unwritable pending changes.
+* Failed :ref:`2fa` is visible in :ref:`audit-log`.
+
+.. rubric:: Bug fixes
+
+* Sign-in form not shown for LDAP.
+* Access control for :http:get:`/api/users/(str:username)/`.
+* :ref:`check-rst-references` allows translatable reference names.
+* :ref:`file_format_params` were not properly applied in some situations.
+* Removed stale :ref:`addon-weblate.xml.customize`.
+* :ref:`mt-libretranslate` compatibility with LibreTranslate 1.7.0.
+* Username autocompletion in comments.
+* Shorten session expiry while in :ref:`2fa` (:cve:`2025-58352` / :ghsa:`377j-wj38-4728`).
+* Statistics when using :ref:`component-links`.
+* :ref:`componentlists` are no longer blocking dashboard loading.
+* OpenMetrics API format.
+
+.. rubric:: Compatibility
+
+* Removed support for no longer working :ref:`mt-ibm`.
+
+.. rubric:: Upgrading
+
+Please follow :ref:`generic-upgrade-instructions` in order to perform update.
+
+* There are several changes in :file:`settings_example.py`, most notably, ``django_otp.middleware.OTPMiddleware`` was removed from ``MIDDLEWARE``; please adjust your settings accordingly.
 
 .. rubric:: Contributors
 

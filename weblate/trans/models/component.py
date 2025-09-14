@@ -118,7 +118,7 @@ from weblate.utils.validators import (
     validate_re_nonempty,
     validate_slug,
 )
-from weblate.vcs.base import Repository, RepositoryError
+from weblate.vcs.base import RepositoryError
 from weblate.vcs.git import GitMergeRequestBase, LocalRepository
 from weblate.vcs.models import VCS_REGISTRY
 from weblate.vcs.ssh import add_host_key
@@ -131,6 +131,7 @@ if TYPE_CHECKING:
     from weblate.auth.models import AuthenticatedHttpRequest, User
     from weblate.checks.base import BaseCheck
     from weblate.trans.models.unit import UnitAttributesDict
+    from weblate.vcs.base import Repository
 
 NEW_LANG_CHOICES = (
     # Translators: Action when adding new translation
@@ -3776,8 +3777,8 @@ class Component(
     @transaction.atomic
     def add_new_language(  # noqa: C901
         self,
-        language,
-        request,
+        language: Language,
+        request: AuthenticatedHttpRequest | None,
         send_signal: bool = True,
         create_translations: bool = True,
         show_messages: bool = True,

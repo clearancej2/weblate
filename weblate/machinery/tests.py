@@ -39,10 +39,8 @@ from weblate.machinery.apertium import ApertiumAPYTranslation
 from weblate.machinery.aws import AWSTranslation
 from weblate.machinery.baidu import BAIDU_API, BaiduTranslation
 from weblate.machinery.base import (
-    BatchMachineTranslation,
     MachineryRateLimitError,
     MachineTranslationError,
-    SettingsDict,
 )
 from weblate.machinery.cyrtranslit import CyrTranslitTranslation
 from weblate.machinery.deepl import DeepLTranslation
@@ -50,7 +48,6 @@ from weblate.machinery.dummy import DummyGlossaryTranslation, DummyTranslation
 from weblate.machinery.glosbe import GlosbeTranslation
 from weblate.machinery.google import GOOGLE_API_ROOT, GoogleTranslation
 from weblate.machinery.googlev3 import GoogleV3Translation
-from weblate.machinery.ibm import IBMTranslation
 from weblate.machinery.libretranslate import LibreTranslateTranslation
 from weblate.machinery.microsoft import MicrosoftCognitiveTranslation
 from weblate.machinery.modernmt import ModernMTTranslation
@@ -75,6 +72,11 @@ from .types import SourceLanguageChoices
 
 if TYPE_CHECKING:
     from requests import PreparedRequest
+
+    from weblate.machinery.base import (
+        BatchMachineTranslation,
+        SettingsDict,
+    )
 
 AMAGAMA_LIVE = "https://amagama-live.translatehouse.org/api/v1"
 
@@ -2447,48 +2449,6 @@ class AlibabaTranslationTest(BaseMachineTranslationTest):
         )
         patcher.start()
         self.addCleanup(patcher.stop)
-
-
-class IBMTranslationTest(BaseMachineTranslationTest):
-    MACHINE_CLS = IBMTranslation
-    EXPECTED_LEN = 1
-    ENGLISH = "en"
-    SUPPORTED = "zh-TW"
-    CONFIGURATION = {
-        "url": "https://api.region.language-translator.watson.cloud.ibm.com/"
-        "instances/id",
-        "key": "x",
-    }
-
-    def mock_empty(self) -> NoReturn:
-        self.skipTest("Not tested")
-
-    def mock_error(self) -> NoReturn:
-        self.skipTest("Not tested")
-
-    def mock_response(self) -> None:
-        responses.add(
-            responses.GET,
-            "https://api.region.language-translator.watson.cloud.ibm.com/"
-            "instances/id/v3/languages?version=2018-05-01",
-            json={
-                "languages": [
-                    {"language": "en"},
-                    {"language": "zh-TW"},
-                    {"language": "de"},
-                ]
-            },
-        )
-        responses.add(
-            responses.POST,
-            "https://api.region.language-translator.watson.cloud.ibm.com/"
-            "instances/id/v3/translate?version=2018-05-01",
-            json={
-                "translations": [{"translation": "window"}],
-                "word_count": 1,
-                "character_count": 6,
-            },
-        )
 
 
 class OpenAITranslationTest(BaseMachineTranslationTest):
